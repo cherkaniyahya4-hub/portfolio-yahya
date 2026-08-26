@@ -61,7 +61,8 @@ const translations = {
   'Technicien Spécialisé — Développement Digital':'Specialized Technician — Digital Development','Institut de formation numérique':'Digital Training Institute','Algorithmique, développement web, bases de données et réalisation de projets en équipe.':'Algorithms, web development, databases and team project delivery.',
   'Validation des fondamentaux JavaScript, structures de données et résolution de problèmes.':'JavaScript fundamentals, data structures and problem-solving validation.',
   'Ce que je propose':'What I offer','services':'services','Des solutions pensées pour soutenir durablement votre présence en ligne.':'Solutions designed to strengthen your online presence for the long term.',
-  "Ce que j'offre":'What I offer','Développement Fullstack':'Fullstack Development','Consulting Technique':'Technical Consulting','Voir plus':'See more',
+  "Ce que j'offre":'What I offer','Développement Fullstack':'Fullstack Development','Consulting Technique':'Technical Consulting','Voir plus':'See more','Toutes les certifications':'All certifications',
+  "Construction d'applications évolutives avec des technologies modernes.":'Building scalable applications with modern technologies.',"Conception et implémentation de solutions d'infrastructure cloud.":'Design and implementation of cloud infrastructure solutions.',"Fourniture d'orientations expertes sur les décisions technologiques.":'Expert guidance on technology decisions.',
   'Création de sites web':'Website creation','Sites vitrines modernes, rapides et alignés avec votre image de marque.':'Modern, fast showcase websites aligned with your brand.','Développement front-end':'Front-end development','Interfaces fidèles aux maquettes, interactives, accessibles et maintenables.':'Pixel-accurate, interactive, accessible and maintainable interfaces.','Responsive design':'Responsive design','Une expérience impeccable sur mobile, tablette et grand écran.':'A flawless experience on mobile, tablet and large screens.','Maintenance':'Maintenance','Corrections, mises à jour et améliorations pour garder votre site performant.':'Fixes, updates and improvements to keep your website performing.','Parlons-en →':"Let's talk →",
   'Un projet en tête ?':'Have a project in mind?','Créons quelque chose de':'Let’s create something','remarquable.':'remarkable.',"Une idée, un projet ou simplement une question ? Écrivez-moi. Je réponds généralement sous 24 heures.":'An idea, a project or simply a question? Write to me. I usually reply within 24 hours.','Téléphone':'Phone','Votre nom':'Your name','Votre email':'Your email','Sujet':'Subject','Votre message':'Your message','Envoyer le message':'Send message',
   'Get in touch':'Entrons en contact','Contact Me':'Contactez-moi','Talk to me':'Parlez-moi','Write me':'Écrivez-moi','Whatsapp':'WhatsApp',
@@ -233,6 +234,21 @@ function showCertificate(index) {
 }
 document.querySelector('.certificate-prev').addEventListener('click', () => showCertificate(certificateIndex - 1));
 document.querySelector('.certificate-next').addEventListener('click', () => showCertificate(certificateIndex + 1));
+
+const certificatesDialog = document.querySelector('#certificates-dialog');
+const certificatesAllButton = document.querySelector('.certificates-all');
+const certificatesAllGrid = certificatesDialog.querySelector('.certificates-all-grid');
+function populateCertificatesDialog() {
+  const currentCards = [...certificatesTrack.querySelectorAll('.certificate-card')];
+  certificatesAllGrid.replaceChildren(...currentCards.map(card => card.cloneNode(true)));
+}
+certificatesAllButton.addEventListener('click', () => {
+  populateCertificatesDialog();
+  certificatesDialog.showModal();
+});
+certificatesDialog.querySelector('.certificates-library-close').addEventListener('click', () => certificatesDialog.close());
+certificatesDialog.addEventListener('click', event => { if (event.target === certificatesDialog) certificatesDialog.close(); });
+new MutationObserver(() => { if (certificatesDialog.open) populateCertificatesDialog(); }).observe(certificatesTrack, { childList:true });
 
 const glow = document.querySelector('.cursor-glow');
 if (!prefersReducedMotion && window.matchMedia('(pointer:fine)').matches) {
