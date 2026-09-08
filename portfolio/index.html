@@ -1,277 +1,1567 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Cherkani Yahya, ingénieur en informatique.">
-  <meta name="theme-color" content="#090c14">
-  <title>Cherkani Yahya — Ingénieur en informatique</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Aller au contenu</a>
-  <div class="cursor-glow" aria-hidden="true"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Cherkani Yahya, ingénieur en informatique."
+    />
+    <meta name="theme-color" content="#090c14" />
+    <title>Cherkani Yahya — Ingénieur en informatique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="header" id="header">
-    <nav class="nav container" aria-label="Navigation principale">
-      <div class="nav-brand-group">
-        <button class="icon-button theme-toggle theme-icon-button" type="button" aria-label="Activer le thème clair" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☀</span></button>
-      </div>
-      <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li><a class="nav-link active" href="#accueil">Accueil</a></li>
-          <li><a class="nav-link" href="#apropos">À propos</a></li>
-          <li><a class="nav-link" href="#competences">Compétences</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#projets">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="nav-actions">
-        <button class="language-switch" type="button" aria-label="Langue actuelle : français" aria-pressed="false"><span class="language-code">Fr</span><i aria-hidden="true"></i></button>
-        <button class="icon-button menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
-      </div>
-    </nav>
-  </header>
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="Navigation principale">
+        <div class="nav-brand-group">
+          <a class="logo" href="#accueil">Yahya<span>.</span></a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a class="nav-link active" href="#accueil">Accueil</a></li>
+            <li><a class="nav-link" href="#apropos">À propos</a></li>
+            <li><a class="nav-link" href="#competences">Compétences</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#projets">Portfolio</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle theme-switch"
+            type="button"
+            aria-label="Activer le thème clair"
+            aria-pressed="false"
+          >
+            <span class="theme-switch-knob"><span class="theme-icon">☾</span></span>
+          </button>
+          <button
+            class="language-switch"
+            type="button"
+            aria-label="Langue actuelle : français"
+            aria-pressed="false"
+          >
+            <span class="lang-track lang-track-fr" aria-hidden="true">Fr</span>
+            <span class="lang-track lang-track-en" aria-hidden="true">En</span>
+            <span class="language-knob"><span class="language-code">Fr</span></span>
+          </button>
+          <button
+            class="icon-button menu-toggle"
+            type="button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-  <main id="main-content">
-    <section class="hero section" id="accueil">
-      <div class="hero-orb orb-one" aria-hidden="true"></div><div class="hero-orb orb-two" aria-hidden="true"></div>
-      <div class="hero-container container">
-        <div class="hero-social-rail socials" aria-label="Réseaux sociaux">
-          <a href="https://www.linkedin.com/in/yahyacherkani/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="4" height="12" rx="1"></rect><circle cx="5" cy="5" r="2"></circle><path d="M11 21V9h4v2.2A5 5 0 0 1 19 9c2.2 0 3 1.8 3 4.5V21h-4v-6.2c0-1.3-.5-2.2-1.6-2.2-1.2 0-1.4 1-1.4 2.2V21Z"></path></svg></a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-6 0C5.8.1 4.7.5 4.7.5A5 5 0 0 0 4.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.3 3.5 6.5 6.8 6.9A4.8 4.8 0 0 0 9 18v4M9 19c-3 .9-3-1.5-4.2-2"></path></svg></a>
-          <a href="mailto:cherkaniyahya4@gmail.com" aria-label="Envoyer un email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></a>
-        </div>
-        <div class="hero-copy reveal">
-          <h1>Cherkani Yahya</h1>
-          <p class="hero-role"><span class="role-line" aria-hidden="true"></span><span class="typed-text" aria-live="polite">Développeur Full-Stack · Étudiant en BTS</span><span class="caret" aria-hidden="true"></span></p>
-          <div class="hero-description">
-            <p>Passionné par le développement web et les nouvelles technologies, je conçois des applications modernes qui combinent performance, simplicité et excellence visuelle.</p>
-            <p>J’interviens sur l’ensemble du processus de création, de l’interface utilisateur à la logique applicative, avec une approche fondée sur la rigueur, la maintenabilité du code et l’amélioration continue.</p>
+    <main id="main-content">
+      <section class="hero section" id="accueil">
+        <div class="hero-orb orb-one" aria-hidden="true"></div>
+        <div class="hero-orb orb-two" aria-hidden="true"></div>
+        <div class="hero-container container">
+          <div class="hero-social-rail socials" aria-label="Réseaux sociaux">
+            <a
+              href="https://www.linkedin.com/in/yahyacherkani/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="9" width="4" height="12" rx="1"></rect>
+                <circle cx="5" cy="5" r="2"></circle>
+                <path
+                  d="M11 21V9h4v2.2A5 5 0 0 1 19 9c2.2 0 3 1.8 3 4.5V21h-4v-6.2c0-1.3-.5-2.2-1.6-2.2-1.2 0-1.4 1-1.4 2.2V21Z"
+                ></path></svg
+            ></a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-6 0C5.8.1 4.7.5 4.7.5A5 5 0 0 0 4.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.3 3.5 6.5 6.8 6.9A4.8 4.8 0 0 0 9 18v4M9 19c-3 .9-3-1.5-4.2-2"
+                ></path></svg
+            ></a>
+            <a
+              href="mailto:cherkaniyahya4@gmail.com"
+              aria-label="Envoyer un email"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="m3 7 9 6 9-6"></path></svg
+            ></a>
           </div>
-          <div class="hero-stack" aria-label="Technologies principales">
-            <span class="stack-label">Stack <i aria-hidden="true"></i></span>
-            <span class="stack-item stack-react" data-name="React" tabindex="0"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"></span>
-            <span class="stack-item stack-vite" data-name="Vite" tabindex="0"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="Vite"></span>
-            <span class="stack-item stack-js" data-name="JavaScript" tabindex="0"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"></span>
-            <span class="stack-item stack-git" data-name="Git" tabindex="0"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"></span>
-            <span class="stack-item stack-mysql" data-name="MySQL" tabindex="0"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL"></span>
+          <div class="hero-copy reveal">
+            <h1>Cherkani Yahya</h1>
+            <p class="hero-role">
+              <span class="role-line" aria-hidden="true"></span
+              ><span class="typed-text" aria-live="polite"
+                >Développeur Full-Stack · Étudiant en BTS</span
+              ><span class="caret" aria-hidden="true"></span>
+            </p>
+            <div class="hero-description">
+              <p>
+                Passionné par le développement web et les nouvelles
+                technologies, je conçois des applications modernes qui combinent
+                performance, simplicité et excellence visuelle.
+              </p>
+              <p>
+                J’interviens sur l’ensemble du processus de création, de
+                l’interface utilisateur à la logique applicative, avec une
+                approche fondée sur la rigueur, la maintenabilité du code et
+                l’amélioration continue.
+              </p>
+            </div>
+            <div class="hero-stack" aria-label="Technologies principales">
+              <span class="stack-label">Stack <i aria-hidden="true"></i></span>
+              <span
+                class="stack-item stack-react"
+                data-name="React"
+                tabindex="0"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                  alt="React"
+              /></span>
+              <span class="stack-item stack-vite" data-name="Vite" tabindex="0"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+                  alt="Vite"
+              /></span>
+              <span
+                class="stack-item stack-js"
+                data-name="JavaScript"
+                tabindex="0"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+              /></span>
+              <span class="stack-item stack-git" data-name="Git" tabindex="0"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                  alt="Git"
+              /></span>
+              <span
+                class="stack-item stack-mysql"
+                data-name="MySQL"
+                tabindex="0"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                  alt="MySQL"
+              /></span>
+            </div>
           </div>
-        </div>
-        <div class="hero-visual reveal">
-          <div class="portrait-wrap profile-orbit">
-            <div class="portrait profile-photo">
-              <img src="assets/images/image.png" alt="Portrait de Cherkani Yahya" width="512" height="1024" fetchpriority="high">
+          <div class="hero-visual reveal">
+            <div class="portrait-wrap profile-orbit">
+              <div class="portrait profile-photo">
+                <img
+                  src="assets/images/image.png"
+                  alt="Portrait de Cherkani Yahya"
+                  width="512"
+                  height="1024"
+                  fetchpriority="high"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <a class="scroll-hint" href="#apropos" aria-label="Découvrir la suite"><span></span> Défilez vers le bas <b aria-hidden="true">↓</b></a>
-    </section>
+        <a class="scroll-hint" href="#apropos" aria-label="Découvrir la suite"
+          ><span></span> Défilez vers le bas <b aria-hidden="true">↓</b></a
+        >
+      </section>
 
-    <section class="section" id="apropos">
-      <div class="container about-reference">
-        <div class="about-reference-heading reveal">
-          <h2>À Mon Sujet</h2>
-          <span aria-hidden="true"></span>
-          <p>Mon introduction</p>
-        </div>
-        <div class="about-reference-grid">
-          <div class="about-reference-photo reveal">
-            <img src="assets/images/imagee.png" alt="Cherkani Yahya" loading="lazy">
+      <section class="section" id="apropos">
+        <div class="container about-reference">
+          <div class="about-reference-heading reveal">
+            <h2>À Mon Sujet</h2>
+            <span aria-hidden="true"></span>
+            <p>Mon introduction</p>
           </div>
-          <div class="about-reference-content reveal">
-            <div class="about-stats">
-              <article><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"></circle><path d="M9 12.2V21l3-2 3 2v-8.8"></path></svg></span><strong>Experience</strong><small>2+ ans</small></article>
-              <article><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="1"></rect><path d="M9 7V4h6v3M8 7v13M16 7v13"></path></svg></span><strong>Complété</strong><small>9+ Projects</small></article>
-              <article><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 14v-3a8 8 0 0 1 16 0v3"></path><path d="M4 13h4v7H6a2 2 0 0 1-2-2v-5ZM20 13h-4v7h2a2 2 0 0 0 2-2v-5Z"></path></svg></span><strong>Support</strong><small>En ligne 24/7</small></article>
+          <div class="about-reference-grid">
+            <div class="about-reference-photo reveal">
+              <img
+                src="assets/images/imagee.png"
+                alt="Cherkani Yahya"
+                loading="lazy"
+              />
             </div>
-            <div class="about-reference-copy">
-              <p>Développeur full-Stack en formation, passionné par la création d'applications web modernes et le développement de solutions numériques performantes. Je porte une attention particulière à la conception de projets bien structurés et à l'amélioration continue de mes compétences en génie logiciel.</p>
-              <p>Technicien logiciel spécialisé dans le développement d'applications cloud et de systèmes de surveillance. Expertise en FastAPI et architecture robuste.</p>
+            <div class="about-reference-content reveal">
+              <div class="about-stats">
+                <article>
+                  <span class="stat-icon" aria-hidden="true"
+                    ><svg viewBox="0 0 24 24">
+                      <circle cx="12" cy="8" r="5"></circle>
+                      <path d="M9 12.2V21l3-2 3 2v-8.8"></path></svg></span
+                  ><strong>Experience</strong><small>2+ ans</small>
+                </article>
+                <article>
+                  <span class="stat-icon" aria-hidden="true"
+                    ><svg viewBox="0 0 24 24">
+                      <rect x="4" y="7" width="16" height="13" rx="1"></rect>
+                      <path d="M9 7V4h6v3M8 7v13M16 7v13"></path></svg></span
+                  ><strong>Complété</strong><small>9+ Projects</small>
+                </article>
+                <article>
+                  <span class="stat-icon" aria-hidden="true"
+                    ><svg viewBox="0 0 24 24">
+                      <path d="M4 14v-3a8 8 0 0 1 16 0v3"></path>
+                      <path
+                        d="M4 13h4v7H6a2 2 0 0 1-2-2v-5ZM20 13h-4v7h2a2 2 0 0 0 2-2v-5Z"
+                      ></path></svg></span
+                  ><strong>Support</strong><small>En ligne 24/7</small>
+                </article>
+              </div>
+              <div class="about-reference-copy">
+                <p>
+                  Développeur full-Stack en formation, passionné par la création
+                  d'applications web modernes et le développement de solutions
+                  numériques performantes. Je porte une attention particulière à
+                  la conception de projets bien structurés et à l'amélioration
+                  continue de mes compétences en génie logiciel.
+                </p>
+                <p>
+                  Technicien logiciel spécialisé dans le développement
+                  d'applications cloud et de systèmes de surveillance. Expertise
+                  en FastAPI et architecture robuste.
+                </p>
+              </div>
+              <a
+                class="button about-cv"
+                href="assets/images/resume.pdf"
+                download="resume.pdf"
+                >Télécharger CV
+                <span class="cv-icon" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24">
+                    <path
+                      d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7Z"
+                    ></path>
+                    <path d="M14 2v5h5M8 13h8M8 17h5"></path></svg></span
+              ></a>
             </div>
-            <a class="button about-cv" href="assets/images/resume.pdf" download="resume.pdf">Télécharger CV <span class="cv-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v5h5M8 13h8M8 17h5"></path></svg></span></a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-alt" id="competences">
-      <div class="container">
-        <div class="section-heading reveal"><p class="section-kicker">Mon expertise</p><h2>Mes <span class="gradient-text">compétences</span></h2><p>Des outils modernes au service d'expériences numériques solides.</p></div>
-        <div class="tech-grid">
-          <article class="tech-panel reveal"><header><span class="panel-icon">⌨</span><h3>Langages</h3></header><div class="tech-list">
-            <div class="tech-card" style="--tech:#3776ab"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
-            <div class="tech-card" style="--tech:#e76f00"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
-            <div class="tech-card" style="--tech:#f7df1e"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-          </div></article>
-          <article class="tech-panel reveal"><header><span class="panel-icon">▣</span><h3>Frontend &amp; UI</h3></header><div class="tech-list">
-            <div class="tech-card" style="--tech:#61dafb"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"><span>React</span></div>
-            <div class="tech-card" style="--tech:#61dafb"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="Preact"><span>Preact</span></div>
-            <div class="tech-card" style="--tech:#f80000"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle JET"><span>Oracle JET</span></div>
-            <div class="tech-card" style="--tech:#f80000"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="VBCS"><span>VBCS</span></div>
-            <div class="tech-card" style="--tech:#e34f26"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
-            <div class="tech-card" style="--tech:#1572b6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
-            <div class="tech-card" style="--tech:#7952b3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></div>
-            <div class="tech-card" style="--tech:#06b6d4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind"><span>Tailwind</span></div>
-          </div></article>
-          <article class="tech-panel reveal"><header><span class="panel-icon">▤</span><h3>Backend &amp; APIs</h3></header><div class="tech-list">
-            <div class="tech-card" style="--tech:#009688"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastAPI</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>REST APIs</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>Microservices</span></div>
-            <div class="tech-card" style="--tech:#6db33f"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot"><span>Spring Boot</span></div>
-            <div class="tech-card" style="--tech:#83cd29"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
-            <div class="tech-card" style="--tech:#ffffff"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express.js"><span>Express.js</span></div>
-            <div class="tech-card" style="--tech:#e535ab"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" alt="GraphQL"><span>GraphQL</span></div>
-          </div></article>
-          <article class="tech-panel reveal"><header><span class="panel-icon">◉</span><h3>Bases de données</h3></header><div class="tech-list">
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>Oracle DB</span></div>
-            <div class="tech-card" style="--tech:#4479a1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
-            <div class="tech-card" style="--tech:#47a248"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>SQL</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>PL/SQL</span></div>
-            <div class="tech-card" style="--tech:#dc382d"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="Redis"><span>Redis</span></div>
-          </div></article>
-          <article class="tech-panel reveal"><header><span class="panel-icon">☁</span><h3>DevOps &amp; Cloud</h3></header><div class="tech-list">
-            <div class="tech-card" style="--tech:#f80000"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="OCI"><span>OCI</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>OCI Functions</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>OCI Object Storage</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>OCI Logging</span></div>
-            <div class="tech-card" style="--tech:#2496ed"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
-            <div class="tech-card" style="--tech:#326ce5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" alt="Kubernetes"><span>Kubernetes</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>CI/CD</span></div>
-            <div class="tech-card" style="--tech:#f05032"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>System Design</span></div>
-            <div class="tech-card" style="--tech:#00e5ff"><b>{ }</b><span>Devtron</span></div>
-            <div class="tech-card" style="--tech:#4285f4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP"><span>GCP</span></div>
-          </div></article>
-          <article class="tech-panel reveal"><header><span class="panel-icon">⌕</span><h3>Outils</h3></header><div class="tech-list">
-            <div class="tech-card" style="--tech:#007acc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
-            <div class="tech-card" style="--tech:#ff6c37"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman"><span>Postman</span></div>
-            <div class="tech-card" style="--tech:#f05032"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="GitHub"><span>GitHub</span></div>
-            <div class="tech-card" style="--tech:#fc6d26"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" alt="GitLab"><span>GitLab</span></div>
-            <div class="tech-card" style="--tech:#2962ff"><b>DB</b><span>Liquibase</span></div>
-            <div class="tech-card" style="--tech:#3ecf8e"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase"><span>Supabase</span></div>
-          </div></article>
+      <section class="section section-alt" id="competences">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Mon expertise</p>
+            <h2>Mes <span class="gradient-text">compétences</span></h2>
+            <p>
+              Des outils modernes au service d'expériences numériques solides.
+            </p>
+          </div>
+          <div class="skills-wrapper reveal">
+            <!-- 1. RECHERCHE & STREAMING -->
+            <div class="skills-category">
+              <h3 class="skills-category-title">RECHERCHE &amp; STREAMING</h3>
+              <div class="skills-category-divider">
+                <span class="skills-divider-dot"></span>
+              </div>
+              <div class="skills-row">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg" alt="Elasticsearch / OpenSearch" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Elasticsearch / OpenSearch</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kibana/kibana-original.svg" alt="Kibana" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Kibana</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="Apache Kafka" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Apache Kafka</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="OCI Streaming" loading="lazy" />
+                  </div>
+                  <span class="skill-name">OCI Streaming</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 32 32" width="36" height="36" fill="none" stroke="#00e5ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="11" y="4" width="10" height="7" rx="2"></rect>
+                      <rect x="3" y="21" width="10" height="7" rx="2"></rect>
+                      <rect x="19" y="21" width="10" height="7" rx="2"></rect>
+                      <path d="M16 11v5M8 21v-5h16v5"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">SSE/WebSockets</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. CLOUD & DEVOPS -->
+            <div class="skills-category">
+              <h3 class="skills-category-title">CLOUD &amp; DEVOPS</h3>
+              <div class="skills-category-divider">
+                <span class="skills-divider-dot"></span>
+              </div>
+              <div class="skills-row">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="OCI" loading="lazy" />
+                  </div>
+                  <span class="skill-name">OCI</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Docker</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" alt="Kubernetes" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Kubernetes</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 32 32" width="36" height="36" fill="none" stroke="#f59e0b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="8" cy="8" r="3.5" stroke="#f59e0b" fill="none"></circle>
+                      <circle cx="8" cy="24" r="3.5" stroke="#f59e0b" fill="none"></circle>
+                      <circle cx="24" cy="11" r="3.5" stroke="#f59e0b" fill="none"></circle>
+                      <path d="M8 11.5v9M8 17c3 0 9-1 12.5-4.5"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">CI/CD</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 32 32" width="36" height="36" fill="#f59e0b" aria-hidden="true">
+                      <rect x="11" y="4" width="10" height="7" rx="1.5"></rect>
+                      <rect x="2" y="21" width="8" height="7" rx="1.5"></rect>
+                      <rect x="12" y="21" width="8" height="7" rx="1.5"></rect>
+                      <rect x="22" y="21" width="8" height="7" rx="1.5"></rect>
+                      <path d="M16 11v5M6 21v-5h20v5M16 16v5" stroke="#f59e0b" stroke-width="2.2" fill="none" stroke-linecap="round"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">System Design</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 32 32" width="36" height="36" fill="#0080ff" aria-hidden="true">
+                      <path d="M14.5 4.5 L6.5 12.5 C5.5 13.5 5.5 15 6.5 16 L12 21.5 C13 22.5 14.5 22 14.5 20.5 L14.5 14.5 L18 11 L14.5 4.5 Z"></path>
+                      <path d="M17.5 27.5 L25.5 19.5 C26.5 18.5 26.5 17 25.5 16 L20 10.5 C19 9.5 17.5 10 17.5 11.5 L17.5 17.5 L14 21 L17.5 27.5 Z"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">Devtron</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. DONNÉES & STOCKAGE -->
+            <div class="skills-category">
+              <h3 class="skills-category-title">DONNÉES &amp; STOCKAGE</h3>
+              <div class="skills-category-divider">
+                <span class="skills-divider-dot"></span>
+              </div>
+              <div class="skills-row">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle DB" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Oracle DB</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL / pgvector" loading="lazy" />
+                  </div>
+                  <span class="skill-name">PostgreSQL / pgvector</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 32 32" width="36" height="36" fill="#38bdf8" aria-hidden="true">
+                      <path d="M6 7.5C6 5 10.5 3 16 3s10 2 10 4.5-4.5 4.5-10 4.5S6 10 6 7.5Z"></path>
+                      <path d="M6 7.5v8c0 2.5 4.5 4.5 10 4.5s10-2 10-4.5v-8" fill="none" stroke="#38bdf8" stroke-width="2.4" stroke-linecap="round"></path>
+                      <path d="M6 15.5v8c0 2.5 4.5 4.5 10 4.5s10-2 10-4.5v-8" fill="none" stroke="#38bdf8" stroke-width="2.4" stroke-linecap="round"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">SQL</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="Redis" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Redis</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. FRONTEND & UI -->
+            <div class="skills-category">
+              <h3 class="skills-category-title">FRONTEND &amp; UI</h3>
+              <div class="skills-category-divider">
+                <span class="skills-divider-dot"></span>
+              </div>
+              <div class="skills-row">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" loading="lazy" />
+                  </div>
+                  <span class="skill-name">React</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Next.js</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy" />
+                  </div>
+                  <span class="skill-name">TypeScript</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy" />
+                  </div>
+                  <span class="skill-name">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. OUTILS DE DÉVELOPPEMENT -->
+            <div class="skills-category">
+              <h3 class="skills-category-title">OUTILS DE DÉVELOPPEMENT</h3>
+              <div class="skills-category-divider">
+                <span class="skills-divider-dot"></span>
+              </div>
+              <div class="skills-row">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" loading="lazy" />
+                  </div>
+                  <span class="skill-name">GitHub</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" alt="GitLab" loading="lazy" />
+                  </div>
+                  <span class="skill-name">GitLab</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Postman</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 32 32" width="36" height="36" aria-hidden="true">
+                      <circle cx="16" cy="16" r="13" stroke="#84cc16" stroke-width="2.4" fill="none"></circle>
+                      <text x="16" y="20.5" text-anchor="middle" font-size="12" font-weight="700" fill="#84cc16" font-family="'Courier New', monospace">{...}</text>
+                    </svg>
+                  </div>
+                  <span class="skill-name">OpenAPI</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg" alt="Pytest" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Pytest</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 32 32" width="36" height="36" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="8" r="6" stroke="#0088ff" stroke-width="2.2" fill="none"></circle>
+                      <polygon points="10,5 15,8 10,11" fill="#0088ff"></polygon>
+                      <circle cx="20" cy="14" r="3.2" stroke="#0088ff" stroke-width="2" fill="none"></circle>
+                      <path d="M19 14l1 1 2-2" stroke="#0088ff" stroke-width="1.6" fill="none" stroke-linecap="round"></path>
+                      <circle cx="26" cy="14" r="3.2" stroke="#0088ff" stroke-width="2" fill="none"></circle>
+                      <path d="M25 14l1 1 2-2" stroke="#0088ff" stroke-width="1.6" fill="none" stroke-linecap="round"></path>
+                      <circle cx="16" cy="24" r="3.2" stroke="#0088ff" stroke-width="2" fill="none"></circle>
+                      <circle cx="15" cy="24" r="0.8" fill="#0088ff"></circle>
+                      <circle cx="17" cy="24" r="0.8" fill="#0088ff"></circle>
+                      <circle cx="24" cy="24" r="3.2" stroke="#0088ff" stroke-width="2" fill="none"></circle>
+                      <path d="M12 14v7a3 3 0 0 0 3 3m1-10h1.8m4 0h2m-7.2 10h4.8" stroke="#0088ff" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">GitHub Actions</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" loading="lazy" />
+                  </div>
+                  <span class="skill-name">Linux</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projets">
+        <div class="container">
+          <div class="portfolio-heading reveal">
+            <h2>Portfolio</h2>
+            <span aria-hidden="true"></span>
+            <p>Mes travaux récents</p>
+          </div>
+          <div
+            class="project-filters reveal"
+            role="group"
+            aria-label="Filtrer les projets"
+          >
+            <button class="filter-button active" data-filter="all">Tous</button
+            ><button class="filter-button" data-filter="web">Web</button
+            ><button class="filter-button" data-filter="app">App</button
+            ><button class="filter-button" data-filter="desktop">
+              Desktop
+            </button>
+          </div>
+          <div class="projects-grid">
+            <article
+              class="project-card ecotracker-card reveal"
+              data-category="web"
+            >
+              <div class="project-image ecotracker-image">
+                <span class="project-number">01</span
+                ><img
+                  src="assets/images/ecotracker.png"
+                  alt="Tableau de bord de la plateforme écologique EcoTracker"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <span>Plateforme écologique</span><span>2026</span>
+                </div>
+                <h3>EcoTracker — Plateforme écologique intelligente</h3>
+                <p>
+                  EcoTracker est une plateforme web interactive conçue pour
+                  aider les utilisateurs à suivre leur impact environnemental.
+                  Elle permet de consulter un EcoScore, analyser les habitudes
+                  quotidiennes, visualiser des statistiques écologiques et
+                  recevoir des recommandations personnalisées afin d’adopter un
+                  mode de vie plus durable.
+                </p>
+                <div
+                  class="ecotracker-tech"
+                  aria-label="Technologies utilisées"
+                >
+                  <span title="HTML5"
+                    ><i
+                      class="devicon-html5-plain colored"
+                      aria-hidden="true"
+                    ></i></span
+                  ><span title="CSS3"
+                    ><i
+                      class="devicon-css3-plain colored"
+                      aria-hidden="true"
+                    ></i></span
+                  ><span title="JavaScript"
+                    ><i
+                      class="devicon-javascript-plain colored"
+                      aria-hidden="true"
+                    ></i></span
+                  ><span title="Chart.js"
+                    ><i
+                      class="devicon-chartjs-plain colored"
+                      aria-hidden="true"
+                    ></i></span
+                  ><span
+                    class="storage-icon"
+                    title="LocalStorage"
+                    aria-label="LocalStorage"
+                    ><svg viewBox="0 0 24 24" aria-hidden="true">
+                      <ellipse cx="12" cy="5" rx="7" ry="3"></ellipse>
+                      <path
+                        d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"
+                      ></path></svg
+                  ></span>
+                </div>
+                <div class="project-links ecotracker-footer">
+                  <strong>Voir le projet</strong
+                  ><a
+                    href="https://ecotracker-mvp.vercel.app/pages/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ouvrir le projet EcoTracker dans un nouvel onglet"
+                    title="Voir le projet"
+                    ><svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M7 17 17 7M8 7h9v9"></path></svg
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card ongoing-project reveal"
+              data-category="app"
+            >
+              <div class="project-image project-photo">
+                <span class="project-number">02</span
+                ><img
+                  src="assets/images/music-sync.png"
+                  alt="Interface de synchronisation musicale en temps réel et discussion entre amis"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <span>Application web</span><span>En cours</span>
+                </div>
+                <h3>Real-time Music Sync with Friends &amp; Chat</h3>
+                <p>
+                  Une plateforme en temps réel qui permet à des amis d’écouter
+                  la même musique en simultané, avec une lecture synchronisée,
+                  un chat en direct et des fonctionnalités interactives pour une
+                  expérience partagée.
+                </p>
+                <div
+                  class="project-tech-icons"
+                  aria-label="Technologies utilisées"
+                >
+                  <span title="React"
+                    ><i
+                      class="devicon-react-original colored"
+                      aria-hidden="true"
+                    ></i></span
+                  ><span title="Supabase"
+                    ><i
+                      class="devicon-supabase-plain colored"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                </div>
+                <div class="project-links ongoing-footer">
+                  <span class="ongoing-label"
+                    ><i aria-hidden="true"></i> Projet en cours</span
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card ongoing-project reveal"
+              data-category="app"
+            >
+              <div class="project-image project-photo faculty-photo">
+                <span class="project-number">03</span
+                ><img
+                  src="assets/images/faculty-management.png"
+                  alt="Écran de connexion de l’application de gestion de la faculté de médecine"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <span>Application mobile &amp; web</span><span>En cours</span>
+                </div>
+                <h3>Gestion de la faculté de médecine</h3>
+                <p>
+                  Application mobile et site web pour la gestion d’une faculté
+                  de médecine. Les professeurs peuvent créer des devoirs et des
+                  annonces, tandis que les étudiants peuvent soumettre leurs
+                  travaux et accéder aux ressources éducatives. Ce projet
+                  facilite la communication entre les professeurs et les
+                  étudiants et améliore l’organisation académique.
+                </p>
+                <div
+                  class="project-tech-icons"
+                  aria-label="Technologies utilisées"
+                >
+                  <span title="React"
+                    ><i
+                      class="devicon-react-original colored"
+                      aria-hidden="true"
+                    ></i></span
+                  ><span title="Java"
+                    ><i
+                      class="devicon-java-plain colored"
+                      aria-hidden="true"
+                    ></i></span
+                  ><span title="Spring Boot"
+                    ><i
+                      class="devicon-spring-original colored"
+                      aria-hidden="true"
+                    ></i></span
+                  ><span title="Vite"
+                    ><i
+                      class="devicon-vitejs-plain colored"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                </div>
+                <div class="project-links ongoing-footer">
+                  <span class="ongoing-label"
+                    ><i aria-hidden="true"></i> Projet en cours</span
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card ongoing-project reveal"
+              data-category="app"
+            >
+              <div class="project-image project-photo">
+                <span class="project-number">04</span
+                ><img
+                  src="assets/images/flow-dashboard.png"
+                  alt="Tableau de bord professionnel de gestion d’équipe Flow"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <span>Application</span><span>En cours</span>
+                </div>
+                <h3>Flow — Gestion d'équipe</h3>
+                <p>
+                  Un tableau de bord clair pour suivre projets, tâches et
+                  indicateurs sans friction.
+                </p>
+                <div class="tags">
+                  <span>JavaScript</span><span>Dashboard</span><span>UX</span>
+                </div>
+                <div class="project-links ongoing-footer">
+                  <span class="ongoing-label"
+                    ><i aria-hidden="true"></i> Projet en cours</span
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card ongoing-project reveal"
+              data-category="web"
+            >
+              <div class="project-image project-photo">
+                <span class="project-number">05</span
+                ><img
+                  src="assets/images/maia-restaurant.png"
+                  alt="Page d’accueil premium du restaurant méditerranéen Maïa"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <span>Site web</span><span>En cours</span>
+                </div>
+                <h3>Maïa — Restaurant</h3>
+                <p>
+                  Une expérience raffinée qui met en scène une cuisine
+                  méditerranéenne contemporaine.
+                </p>
+                <div class="tags">
+                  <span>HTML</span><span>CSS</span><span>SEO</span>
+                </div>
+                <div class="project-links ongoing-footer">
+                  <span class="ongoing-label"
+                    ><i aria-hidden="true"></i> Projet en cours</span
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card ongoing-project reveal"
+              data-category="desktop"
+            >
+              <div class="project-image project-photo">
+                <span class="project-number">06</span
+                ><img
+                  src="assets/images/orbit-saas.png"
+                  alt="Landing page professionnelle de la plateforme SaaS Orbit"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <span>Desktop</span><span>En cours</span>
+                </div>
+                <h3>Orbit — Landing page</h3>
+                <p>
+                  Une page de lancement professionnelle pour un outil SaaS
+                  tourné vers la productivité.
+                </p>
+                <div class="tags">
+                  <span>Landing page</span><span>Figma</span><span>CRO</span>
+                </div>
+                <div class="project-links ongoing-footer">
+                  <span class="ongoing-label"
+                    ><i aria-hidden="true"></i> Projet en cours</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="parcours">
+        <div class="container narrow">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Mon évolution</p>
+            <h2>Mon <span class="gradient-text">parcours</span></h2>
+            <p>
+              Un apprentissage continu, entre projets concrets et nouvelles
+              compétences.
+            </p>
+          </div>
+          <article class="security-experience reveal" tabindex="0">
+            <h3>Stagiaire en Sécurité et Développement</h3>
+            <div class="security-experience-meta">
+              <span
+                ><i aria-hidden="true">▣</i>
+                <em>juin 2026 – juillet 2026</em></span
+              ><strong>Institut Pasteur du Maroc</strong>
+            </div>
+            <p>
+              Travail au sein du service informatique sur les principes de
+              sécurité des applications web et de protection des données. Étude
+              des recommandations de l’OWASP, des vulnérabilités liées aux
+              requêtes SQL et des bonnes pratiques de sécurisation des sessions,
+              de l’authentification et du contrôle d’accès. Contribution à
+              l’analyse des risques applicatifs et à l’amélioration des
+              pratiques de développement sécurisé.
+            </p>
+            <div class="security-tags">
+              <span>PL/SQL</span><span>SQL</span><span>UTPLSQL</span
+              ><span>SQLcl</span><span>APEX SERT</span><span>Liquibase</span>
+            </div>
+            <div class="security-details">
+              <ul>
+                <li>
+                  Étude des principales vulnérabilités applicatives recensées
+                  dans l’OWASP Top 10.
+                </li>
+                <li>
+                  Analyse des risques liés aux injections SQL et application des
+                  bonnes pratiques de sécurisation des requêtes.
+                </li>
+                <li>
+                  Étude de la gestion et de la sécurisation des sessions
+                  utilisateur, notamment leur création, leur expiration et leur
+                  invalidation.
+                </li>
+                <li>
+                  Analyse des mécanismes d’authentification, d’autorisation et
+                  de contrôle d’accès.
+                </li>
+                <li>
+                  Sensibilisation aux attaques XSS, CSRF, au vol de session et
+                  aux erreurs de configuration de sécurité.
+                </li>
+                <li>
+                  Initiation aux tests unitaires avec UTPLSQL afin de vérifier
+                  la fiabilité des traitements PL/SQL.
+                </li>
+                <li>
+                  Découverte de Liquibase pour le suivi, la gestion et le
+                  déploiement des modifications apportées à la base de données.
+                </li>
+                <li>
+                  Application des bonnes pratiques de développement sécurisé, de
+                  validation des entrées et de gestion des erreurs.
+                </li>
+              </ul>
+            </div>
+            <span class="security-hint"
+              >Survolez pour voir les missions <b>↓</b></span
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="section services-reference" id="services">
+        <div class="container services-wide">
+          <div class="services-heading reveal">
+            <h2>Services</h2>
+            <span aria-hidden="true"></span>
+            <p>Ce que j'offre</p>
+          </div>
+          <div class="services-reference-grid">
+            <article class="service-reference-card reveal">
+              <span class="service-reference-icon" aria-hidden="true"
+                ><svg viewBox="0 0 24 24">
+                  <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                  <path d="M15 4v16M3 9h12"></path></svg
+              ></span>
+              <h3>Développement Fullstack</h3>
+              <p class="service-reference-description">
+                Construction d'applications évolutives avec des technologies
+                modernes.
+              </p>
+              <button
+                type="button"
+                class="service-more"
+                data-service="fullstack"
+              >
+                Voir plus <span>→</span>
+              </button>
+            </article>
+            <article class="service-reference-card reveal">
+              <span class="service-reference-icon" aria-hidden="true"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M6.5 18h11a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1A3.5 3.5 0 0 0 6.5 18Z"
+                  ></path>
+                  <path d="M8 18v2M12 18v2M16 18v2"></path></svg
+              ></span>
+              <h3>Cloud &amp; DevOps</h3>
+              <p class="service-reference-description">
+                Conception et implémentation de solutions d'infrastructure
+                cloud.
+              </p>
+              <button type="button" class="service-more" data-service="cloud">
+                Voir plus <span>→</span>
+              </button>
+            </article>
+            <article class="service-reference-card reveal">
+              <span class="service-reference-icon" aria-hidden="true"
+                ><svg viewBox="0 0 24 24">
+                  <path d="M4 19V5M4 19h16"></path>
+                  <path d="m7 15 4-4 3 2 5-6"></path></svg
+              ></span>
+              <h3>Consulting Technique</h3>
+              <p class="service-reference-description">
+                Fourniture d'orientations expertes sur les décisions
+                technologiques.
+              </p>
+              <button
+                type="button"
+                class="service-more"
+                data-service="consulting"
+              >
+                Voir plus <span>→</span>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <dialog
+        class="service-dialog"
+        id="service-dialog"
+        aria-labelledby="service-dialog-title"
+      >
+        <div class="service-dialog-inner">
+          <button
+            class="service-dialog-close"
+            type="button"
+            aria-label="Fermer"
+          >
+            ×
+          </button>
+          <h3 id="service-dialog-title"></h3>
+          <p class="service-dialog-intro"></p>
+          <ul class="service-dialog-list"></ul>
+        </div>
+      </dialog>
+
+      <section class="section certifications-section" id="certifications">
+        <div class="container certifications-container">
+          <div class="certifications-heading reveal">
+            <h2>Certifications</h2>
+            <span aria-hidden="true"></span>
+            <p>Mes qualifications professionnelles</p>
+          </div>
+          <div class="certifications-carousel reveal">
+            <button
+              class="certificate-arrow certificate-prev"
+              type="button"
+              aria-label="Certificat précédent"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            <div class="certificates-track">
+              <!-- 1. Meta (First) -->
+              <article class="certificate-card">
+                <div class="certificate-preview">
+                  <img
+                    src="assets/images/coursera-meta-advanced-react.png"
+                    alt="Certificat Meta Advanced React"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Meta Advanced React</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-org">Meta</span>
+                  <span class="certificate-year">2026</span>
+                </div>
+                <p class="certificate-desc">
+                  Approfondissement de React : composants avancés, hooks
+                  personnalisés, gestion d’état et tests d’interfaces.
+                </p>
+                <div class="certificate-actions">
+                  <a
+                    class="certificate-btn-verify"
+                    href="https://coursera.org/verify/HQEN2H7NYKHJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vérifier la certification Meta Advanced React"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="m8.5 12 2.5 2.5 4.5-5" />
+                    </svg>
+                    <span>Vérifier</span>
+                  </a>
+                  <a
+                    class="certificate-btn-view"
+                    href="assets/images/react-cerificat-advanced.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Voir le certificat Meta Advanced React"
+                  >
+                    <span>Voir le certificat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- 2. Oracle (Second) -->
+              <article class="certificate-card">
+                <div class="certificate-preview">
+                  <img
+                    src="assets/images/coursera-oci-generative-ai.png"
+                    alt="Certificat Oracle Cloud Infrastructure 2025 Certified Generative AI Professional"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>
+                  Oracle Cloud Infrastructure 2025 Certified Generative AI
+                  Professional
+                </h3>
+                <div class="certificate-meta">
+                  <span class="certificate-org">Oracle</span>
+                  <span class="certificate-year">2026</span>
+                </div>
+                <p class="certificate-desc">
+                  Expertise en IA générative sur OCI : modèles fondamentaux,
+                  LLM, prompt engineering et intégration cloud.
+                </p>
+                <div class="certificate-actions">
+                  <a
+                    class="certificate-btn-verify"
+                    href="https://coursera.org/verify/3HP7JMCG97BL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vérifier la certification Oracle Cloud Infrastructure Generative AI Professional"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="m8.5 12 2.5 2.5 4.5-5" />
+                    </svg>
+                    <span>Vérifier</span>
+                  </a>
+                  <a
+                    class="certificate-btn-view"
+                    href="assets/images/Coursera-Oracle Cloud Infrastructure Generative AI Professional.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Voir le certificat Oracle Cloud Infrastructure Generative AI Professional"
+                  >
+                    <span>Voir le certificat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- 3. freeCodeCamp (Third) -->
+              <article class="certificate-card freecodecamp-card">
+                <div class="certificate-preview">
+                  <img
+                    src="assets/images/freecodecamp-javascript.png"
+                    alt="Certificat JavaScript Developer freeCodeCamp"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>JavaScript Developer Certification</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-org">freeCodeCamp</span>
+                  <span class="certificate-year">2026</span>
+                </div>
+                <p class="certificate-desc">
+                  Certification développeur JavaScript approfondie représentant
+                  environ 300 heures de pratique, algorithmes et projets web.
+                </p>
+                <div class="certificate-actions">
+                  <a
+                    class="certificate-btn-verify"
+                    href="https://freecodecamp.org/certification/yahyacherkani/javascript-v9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vérifier la certification freeCodeCamp JavaScript Developer"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="m8.5 12 2.5 2.5 4.5-5" />
+                    </svg>
+                    <span>Vérifier</span>
+                  </a>
+                  <a
+                    class="certificate-btn-view"
+                    href="assets/images/cer3.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Voir le certificat freeCodeCamp JavaScript Developer"
+                  >
+                    <span>Voir le certificat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- 4. Oracle Autonomous Database -->
+              <article class="certificate-card">
+                <div class="certificate-preview">
+                  <img
+                    src="assets/images/coursera-oracle-autonomous-database.png"
+                    alt="Certificat Oracle Autonomous Database Professional"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Oracle Autonomous Database Professional</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-org">Oracle</span>
+                  <span class="certificate-year">2026</span>
+                </div>
+                <p class="certificate-desc">
+                  Maîtrise d’Oracle Autonomous Database, de l’administration
+                  automatisée et des architectures de données cloud.
+                </p>
+                <div class="certificate-actions">
+                  <a
+                    class="certificate-btn-verify"
+                    href="https://coursera.org/verify/8CDIR3YBY7Y5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vérifier la certification Oracle Autonomous Database Professional"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="m8.5 12 2.5 2.5 4.5-5" />
+                    </svg>
+                    <span>Vérifier</span>
+                  </a>
+                  <a
+                    class="certificate-btn-view"
+                    href="assets/images/Coursera-oracle-databse-preoffesionnal.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Voir le certificat Oracle Autonomous Database Professional"
+                  >
+                    <span>Voir le certificat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- 5. Oracle Cloud Essentials -->
+              <article class="certificate-card">
+                <div class="certificate-preview">
+                  <img
+                    src="assets/images/coursera-oracle-cloud-essentials.png"
+                    alt="Certificat Introduction to Oracle Cloud Essentials"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Introduction to Oracle Cloud Essentials</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-org">Oracle</span>
+                  <span class="certificate-year">2026</span>
+                </div>
+                <p class="certificate-desc">
+                  Fondamentaux d’Oracle Cloud Infrastructure : services cœur,
+                  sécurité, réseaux et gouvernance cloud.
+                </p>
+                <div class="certificate-actions">
+                  <a
+                    class="certificate-btn-verify"
+                    href="https://coursera.org/verify/ZE6IC1MU456I"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vérifier la certification Introduction to Oracle Cloud Essentials"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="m8.5 12 2.5 2.5 4.5-5" />
+                    </svg>
+                    <span>Vérifier</span>
+                  </a>
+                  <a
+                    class="certificate-btn-view"
+                    href="assets/images/Coursera-certficat ORACLE-CLOUD&IA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Voir le certificat Introduction to Oracle Cloud Essentials"
+                  >
+                    <span>Voir le certificat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- 6. Java Programming for Beginners -->
+              <article class="certificate-card">
+                <div class="certificate-preview">
+                  <img
+                    src="assets/images/coursera-java-beginners.png"
+                    alt="Certificat Java Programming for Beginners délivré par IBM"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Java Programming for Beginners</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-org">IBM</span>
+                  <span class="certificate-year">2026</span>
+                </div>
+                <p class="certificate-desc">
+                  Fondamentaux de Java, programmation orientée objet, structures
+                  de contrôle et résolution algorithmique.
+                </p>
+                <div class="certificate-actions">
+                  <a
+                    class="certificate-btn-verify"
+                    href="https://coursera.org/verify/8L1B19OY0F3U"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vérifier la certification Java Programming for Beginners"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="m8.5 12 2.5 2.5 4.5-5" />
+                    </svg>
+                    <span>Vérifier</span>
+                  </a>
+                  <a
+                    class="certificate-btn-view"
+                    href="assets/images/Coursera-java-programming-for-beginners.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Voir le certificat Java Programming for Beginners"
+                  >
+                    <span>Voir le certificat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- 7. Cisco JavaScript Essentials 2 -->
+              <article class="certificate-card">
+                <div class="certificate-preview">
+                  <img
+                    src="assets/images/cer1.png"
+                    alt="Certificat JavaScript Essentials 2 délivré par Cisco"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>JavaScript Essentials 2</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-org">Cisco</span>
+                  <span class="certificate-year">2026</span>
+                </div>
+                <p class="certificate-desc">
+                  Formation avancée en JavaScript, programmation orientée objet
+                  et développement algorithmique.
+                </p>
+                <div class="certificate-actions">
+                  <a
+                    class="certificate-btn-verify"
+                    href="assets/images/cer1.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vérifier le certificat JavaScript Essentials 2"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="m8.5 12 2.5 2.5 4.5-5" />
+                    </svg>
+                    <span>Vérifier</span>
+                  </a>
+                  <a
+                    class="certificate-btn-view"
+                    href="assets/images/cer1.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Voir le certificat JavaScript Essentials 2"
+                  >
+                    <span>Voir le certificat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- 8. Cisco Python Essentials 2 -->
+              <article class="certificate-card">
+                <div class="certificate-preview">
+                  <img
+                    src="assets/images/cer2.png"
+                    alt="Certificat Python Essentials 2 délivré par Cisco"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Python Essentials 2</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-org">Cisco</span>
+                  <span class="certificate-year">2026</span>
+                </div>
+                <p class="certificate-desc">
+                  Maîtrise des concepts Python avancés, de la programmation
+                  objet et du développement modulaire.
+                </p>
+                <div class="certificate-actions">
+                  <a
+                    class="certificate-btn-verify"
+                    href="assets/images/cer2.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vérifier le certificat Python Essentials 2"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="m8.5 12 2.5 2.5 4.5-5" />
+                    </svg>
+                    <span>Vérifier</span>
+                  </a>
+                  <a
+                    class="certificate-btn-view"
+                    href="assets/images/cer2.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Voir le certificat Python Essentials 2"
+                  >
+                    <span>Voir le certificat</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <button
+              class="certificate-arrow certificate-next"
+              type="button"
+              aria-label="Certificat suivant"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+          <div class="certificate-dots" aria-hidden="true"></div>
+          <button
+            class="certificates-all"
+            type="button"
+            aria-haspopup="dialog"
+            aria-controls="certificates-dialog"
+          >
+            Voir toutes les certifications
+          </button>
+        </div>
+      </section>
+
+      <dialog
+        class="certificates-library-dialog"
+        id="certificates-dialog"
+        aria-labelledby="certificates-dialog-title"
+      >
+        <div class="certificates-library-shell">
+          <header class="certificates-library-header">
+            <div>
+              <span>Certifications</span>
+              <h3 id="certificates-dialog-title">Toutes les certifications</h3>
+            </div>
+            <button
+              class="certificates-library-close"
+              type="button"
+              aria-label="Fermer"
+            >
+              ×
+            </button>
+          </header>
+          <div class="certificates-all-grid"></div>
+        </div>
+      </dialog>
+
+      <section class="section contact-reference" id="contact">
+        <div class="container contact-reference-container">
+          <div class="contact-reference-heading reveal">
+            <h2>Get in touch</h2>
+            <span aria-hidden="true"></span>
+            <p>Contact Me</p>
+          </div>
+          <h3 class="contact-reference-subtitle reveal">Talk to me</h3>
+          <div class="contact-reference-grid">
+            <article class="contact-reference-card reveal">
+              <span
+                class="contact-reference-icon email-send-icon"
+                aria-hidden="true"
+                ><svg viewBox="0 0 24 24">
+                  <rect x="6" y="5" width="15" height="12" rx="1"></rect>
+                  <path d="m6 7 7.5 5L21 7M4 10H1M5 14H2M7 18H4"></path></svg
+              ></span>
+              <h4>Email</h4>
+              <p>cherkaniyahya4@gmail.com</p>
+              <a href="mailto:cherkaniyahya4@gmail.com"
+                >Write me <span>→</span></a
+              >
+            </article>
+            <article class="contact-reference-card reveal">
+              <span
+                class="contact-reference-icon brand-icon brand-whatsapp"
+                aria-hidden="true"
+              ></span>
+              <h4>WhatsApp</h4>
+              <p>+212 611346544</p>
+              <a
+                href="https://wa.me/212611346544"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Write me <span>→</span></a
+              >
+            </article>
+            <article class="contact-reference-card reveal">
+              <span
+                class="contact-reference-icon linkedin-mark"
+                aria-hidden="true"
+                >in</span
+              >
+              <h4>LinkedIn</h4>
+              <p>Cherkani Yahya</p>
+              <a
+                href="https://www.linkedin.com/in/yahyacherkani/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Write me <span>→</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-main">
+        <div>
+          <a href="#accueil" class="logo"><span>[</span> CY <span>]</span></a>
+          <p>Des idées claires.<br />Des expériences fortes.</p>
+        </div>
+        <div>
+          <h3>Navigation</h3>
+          <a href="#apropos">À propos</a><a href="#projets">Projets</a
+          ><a href="#services">Services</a>
+        </div>
+        <div>
+          <h3>Me suivre</h3>
+          <a href="https://github.com/">GitHub</a
+          ><a href="https://www.linkedin.com/in/yahyacherkani/">LinkedIn</a
+          ><a href="https://instagram.com/">Instagram</a>
+        </div>
+        <div class="footer-cta">
+          <p>Prêt à démarrer ?</p>
+          <a href="#contact">Écrivez-moi ↗</a>
         </div>
       </div>
-    </section>
-
-    <section class="section" id="projets">
-      <div class="container">
-        <div class="portfolio-heading reveal"><h2>Portfolio</h2><span aria-hidden="true"></span><p>Mes travaux récents</p></div>
-        <div class="project-filters reveal" role="group" aria-label="Filtrer les projets">
-          <button class="filter-button active" data-filter="all">Tous</button><button class="filter-button" data-filter="web">Web</button><button class="filter-button" data-filter="app">App</button><button class="filter-button" data-filter="desktop">Desktop</button>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card ecotracker-card reveal" data-category="web"><div class="project-image ecotracker-image"><span class="project-number">01</span><img src="assets/images/ecotracker.png" alt="Tableau de bord de la plateforme écologique EcoTracker" loading="lazy"></div><div class="project-body"><div class="project-top"><span>Plateforme écologique</span><span>2026</span></div><h3>EcoTracker — Plateforme écologique intelligente</h3><p>EcoTracker est une plateforme web interactive conçue pour aider les utilisateurs à suivre leur impact environnemental. Elle permet de consulter un EcoScore, analyser les habitudes quotidiennes, visualiser des statistiques écologiques et recevoir des recommandations personnalisées afin d’adopter un mode de vie plus durable.</p><div class="ecotracker-tech" aria-label="Technologies utilisées"><span title="HTML5"><i class="devicon-html5-plain colored" aria-hidden="true"></i></span><span title="CSS3"><i class="devicon-css3-plain colored" aria-hidden="true"></i></span><span title="JavaScript"><i class="devicon-javascript-plain colored" aria-hidden="true"></i></span><span title="Chart.js"><i class="devicon-chartjs-plain colored" aria-hidden="true"></i></span><span class="storage-icon" title="LocalStorage" aria-label="LocalStorage"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="3"></ellipse><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path></svg></span></div><div class="project-links ecotracker-footer"><strong>Voir le projet</strong><a href="https://ecotracker-mvp.vercel.app/pages/index.html" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le projet EcoTracker dans un nouvel onglet" title="Voir le projet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></a></div></div></article>
-          <article class="project-card ongoing-project reveal" data-category="app"><div class="project-image project-photo"><span class="project-number">02</span><img src="assets/images/music-sync.png" alt="Interface de synchronisation musicale en temps réel et discussion entre amis" loading="lazy"></div><div class="project-body"><div class="project-top"><span>Application web</span><span>En cours</span></div><h3>Real-time Music Sync with Friends &amp; Chat</h3><p>Une plateforme en temps réel qui permet à des amis d’écouter la même musique en simultané, avec une lecture synchronisée, un chat en direct et des fonctionnalités interactives pour une expérience partagée.</p><div class="project-tech-icons" aria-label="Technologies utilisées"><span title="React"><i class="devicon-react-original colored" aria-hidden="true"></i></span><span title="Supabase"><i class="devicon-supabase-plain colored" aria-hidden="true"></i></span></div><div class="project-links ongoing-footer"><span class="ongoing-label"><i aria-hidden="true"></i> Projet en cours</span></div></div></article>
-          <article class="project-card ongoing-project reveal" data-category="app"><div class="project-image project-photo faculty-photo"><span class="project-number">03</span><img src="assets/images/faculty-management.png" alt="Écran de connexion de l’application de gestion de la faculté de médecine" loading="lazy"></div><div class="project-body"><div class="project-top"><span>Application mobile &amp; web</span><span>En cours</span></div><h3>Gestion de la faculté de médecine</h3><p>Application mobile et site web pour la gestion d’une faculté de médecine. Les professeurs peuvent créer des devoirs et des annonces, tandis que les étudiants peuvent soumettre leurs travaux et accéder aux ressources éducatives. Ce projet facilite la communication entre les professeurs et les étudiants et améliore l’organisation académique.</p><div class="project-tech-icons" aria-label="Technologies utilisées"><span title="React"><i class="devicon-react-original colored" aria-hidden="true"></i></span><span title="Java"><i class="devicon-java-plain colored" aria-hidden="true"></i></span><span title="Spring Boot"><i class="devicon-spring-original colored" aria-hidden="true"></i></span><span title="Vite"><i class="devicon-vitejs-plain colored" aria-hidden="true"></i></span></div><div class="project-links ongoing-footer"><span class="ongoing-label"><i aria-hidden="true"></i> Projet en cours</span></div></div></article>
-          <article class="project-card ongoing-project reveal" data-category="app"><div class="project-image project-photo"><span class="project-number">04</span><img src="assets/images/flow-dashboard.png" alt="Tableau de bord professionnel de gestion d’équipe Flow" loading="lazy"></div><div class="project-body"><div class="project-top"><span>Application</span><span>En cours</span></div><h3>Flow — Gestion d'équipe</h3><p>Un tableau de bord clair pour suivre projets, tâches et indicateurs sans friction.</p><div class="tags"><span>JavaScript</span><span>Dashboard</span><span>UX</span></div><div class="project-links ongoing-footer"><span class="ongoing-label"><i aria-hidden="true"></i> Projet en cours</span></div></div></article>
-          <article class="project-card ongoing-project reveal" data-category="web"><div class="project-image project-photo"><span class="project-number">05</span><img src="assets/images/maia-restaurant.png" alt="Page d’accueil premium du restaurant méditerranéen Maïa" loading="lazy"></div><div class="project-body"><div class="project-top"><span>Site web</span><span>En cours</span></div><h3>Maïa — Restaurant</h3><p>Une expérience raffinée qui met en scène une cuisine méditerranéenne contemporaine.</p><div class="tags"><span>HTML</span><span>CSS</span><span>SEO</span></div><div class="project-links ongoing-footer"><span class="ongoing-label"><i aria-hidden="true"></i> Projet en cours</span></div></div></article>
-          <article class="project-card ongoing-project reveal" data-category="desktop"><div class="project-image project-photo"><span class="project-number">06</span><img src="assets/images/orbit-saas.png" alt="Landing page professionnelle de la plateforme SaaS Orbit" loading="lazy"></div><div class="project-body"><div class="project-top"><span>Desktop</span><span>En cours</span></div><h3>Orbit — Landing page</h3><p>Une page de lancement professionnelle pour un outil SaaS tourné vers la productivité.</p><div class="tags"><span>Landing page</span><span>Figma</span><span>CRO</span></div><div class="project-links ongoing-footer"><span class="ongoing-label"><i aria-hidden="true"></i> Projet en cours</span></div></div></article>
-        </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Cherkani Yahya. Tous droits réservés.</p>
+        <p>Conçu avec soin à Casablanca.</p>
       </div>
-    </section>
-
-    <section class="section section-alt" id="parcours">
-      <div class="container narrow"><div class="section-heading reveal"><p class="section-kicker">Mon évolution</p><h2>Mon <span class="gradient-text">parcours</span></h2><p>Un apprentissage continu, entre projets concrets et nouvelles compétences.</p></div>
-        <article class="security-experience reveal" tabindex="0">
-          <h3>Stagiaire en Sécurité et Développement</h3>
-          <div class="security-experience-meta"><span><i aria-hidden="true">▣</i> <em>juin 2026 – juillet 2026</em></span><strong>Institut Pasteur du Maroc</strong></div>
-          <p>Travail au sein du service informatique sur les principes de sécurité des applications web et de protection des données. Étude des recommandations de l’OWASP, des vulnérabilités liées aux requêtes SQL et des bonnes pratiques de sécurisation des sessions, de l’authentification et du contrôle d’accès. Contribution à l’analyse des risques applicatifs et à l’amélioration des pratiques de développement sécurisé.</p>
-          <div class="security-tags"><span>PL/SQL</span><span>SQL</span><span>UTPLSQL</span><span>SQLcl</span><span>APEX SERT</span><span>Liquibase</span></div>
-          <div class="security-details"><ul>
-            <li>Étude des principales vulnérabilités applicatives recensées dans l’OWASP Top 10.</li>
-            <li>Analyse des risques liés aux injections SQL et application des bonnes pratiques de sécurisation des requêtes.</li>
-            <li>Étude de la gestion et de la sécurisation des sessions utilisateur, notamment leur création, leur expiration et leur invalidation.</li>
-            <li>Analyse des mécanismes d’authentification, d’autorisation et de contrôle d’accès.</li>
-            <li>Sensibilisation aux attaques XSS, CSRF, au vol de session et aux erreurs de configuration de sécurité.</li>
-            <li>Initiation aux tests unitaires avec UTPLSQL afin de vérifier la fiabilité des traitements PL/SQL.</li>
-            <li>Découverte de Liquibase pour le suivi, la gestion et le déploiement des modifications apportées à la base de données.</li>
-            <li>Application des bonnes pratiques de développement sécurisé, de validation des entrées et de gestion des erreurs.</li>
-          </ul></div>
-          <span class="security-hint">Survolez pour voir les missions <b>↓</b></span>
-        </article>
-      </div>
-    </section>
-
-    <section class="section services-reference" id="services"><div class="container services-wide">
-      <div class="services-heading reveal"><h2>Services</h2><span aria-hidden="true"></span><p>Ce que j'offre</p></div>
-      <div class="services-reference-grid">
-        <article class="service-reference-card reveal">
-          <span class="service-reference-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M15 4v16M3 9h12"></path></svg></span>
-          <h3>Développement Fullstack</h3>
-          <p class="service-reference-description">Construction d'applications évolutives avec des technologies modernes.</p>
-          <button type="button" class="service-more" data-service="fullstack">Voir plus <span>→</span></button>
-        </article>
-        <article class="service-reference-card reveal">
-          <span class="service-reference-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.5 18h11a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1A3.5 3.5 0 0 0 6.5 18Z"></path><path d="M8 18v2M12 18v2M16 18v2"></path></svg></span>
-          <h3>Cloud &amp; DevOps</h3>
-          <p class="service-reference-description">Conception et implémentation de solutions d'infrastructure cloud.</p>
-          <button type="button" class="service-more" data-service="cloud">Voir plus <span>→</span></button>
-        </article>
-        <article class="service-reference-card reveal">
-          <span class="service-reference-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16"></path><path d="m7 15 4-4 3 2 5-6"></path></svg></span>
-          <h3>Consulting Technique</h3>
-          <p class="service-reference-description">Fourniture d'orientations expertes sur les décisions technologiques.</p>
-          <button type="button" class="service-more" data-service="consulting">Voir plus <span>→</span></button>
-        </article>
-      </div>
-    </div></section>
-
-    <dialog class="service-dialog" id="service-dialog" aria-labelledby="service-dialog-title">
-      <div class="service-dialog-inner">
-        <button class="service-dialog-close" type="button" aria-label="Fermer">×</button>
-        <h3 id="service-dialog-title"></h3>
-        <p class="service-dialog-intro"></p>
-        <ul class="service-dialog-list"></ul>
-      </div>
-    </dialog>
-
-    <section class="section certifications-section" id="certifications"><div class="container certifications-container">
-      <div class="certifications-heading reveal"><h2>Certifications</h2><span aria-hidden="true"></span><p>Mon parcours certifié</p></div>
-      <div class="certifications-carousel reveal">
-        <button class="certificate-arrow certificate-prev" type="button" aria-label="Certificat précédent">‹</button>
-        <div class="certificates-track">
-          <article class="certificate-card"><div class="certificate-preview"><img src="assets/images/cer1.png" alt="Certificat JavaScript Essentials 2" loading="lazy"></div><h3>JavaScript Essentials 2</h3><div class="certificate-meta"><span>Cisco Networking Academy</span><time datetime="2026">2026</time></div><p>Formation avancée en JavaScript, programmation orientée objet et développement algorithmique.</p><a href="assets/images/cer1.pdf" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">✓</span> Vérifier</a></article>
-          <article class="certificate-card"><div class="certificate-preview"><img src="assets/images/cer2.png" alt="Certificat Python Essentials 2" loading="lazy"></div><h3>Python Essentials 2</h3><div class="certificate-meta"><span>Cisco Networking Academy</span><time datetime="2026">2026</time></div><p>Maîtrise des concepts Python avancés, de la programmation objet et des applications modulaires.</p><a href="assets/images/cer2.pdf" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">✓</span> Vérifier</a></article>
-          <article class="certificate-card freecodecamp-certificate"><div class="certificate-preview"><img src="assets/images/cer3.png" alt="JavaScript Developer Certification freeCodeCamp" loading="lazy"></div><h3>JavaScript Developer Certification</h3><div class="certificate-meta"><span>freeCodeCamp</span><time datetime="2026">2026</time></div><p>Certification développeur JavaScript représentant environ 300 heures de formation et de projets.</p><a href="assets/images/cer3.pdf" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">✓</span> Vérifier</a></article>
-        </div>
-        <button class="certificate-arrow certificate-next" type="button" aria-label="Certificat suivant">›</button>
-      </div>
-      <div class="certificate-dots" aria-hidden="true"><span class="active"></span><span></span><span></span></div>
-      <button class="certificates-all" type="button" aria-haspopup="dialog" aria-controls="certificates-dialog">Voir toutes les certifications</button>
-    </div></section>
-
-    <dialog class="certificates-library-dialog" id="certificates-dialog" aria-labelledby="certificates-dialog-title">
-      <div class="certificates-library-shell">
-        <header class="certificates-library-header">
-          <div><span>Certifications</span><h3 id="certificates-dialog-title">Toutes les certifications</h3></div>
-          <button class="certificates-library-close" type="button" aria-label="Fermer">×</button>
-        </header>
-        <div class="certificates-all-grid"></div>
-      </div>
-    </dialog>
-
-    <section class="section contact-reference" id="contact"><div class="container contact-reference-container">
-      <div class="contact-reference-heading reveal"><h2>Get in touch</h2><span aria-hidden="true"></span><p>Contact Me</p></div>
-      <h3 class="contact-reference-subtitle reveal">Talk to me</h3>
-      <div class="contact-reference-grid">
-        <article class="contact-reference-card reveal"><span class="contact-reference-icon email-send-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="5" width="15" height="12" rx="1"></rect><path d="m6 7 7.5 5L21 7M4 10H1M5 14H2M7 18H4"></path></svg></span><h4>Email</h4><p>cherkaniyahya4@gmail.com</p><a href="mailto:cherkaniyahya4@gmail.com">Write me <span>→</span></a></article>
-        <article class="contact-reference-card reveal"><span class="contact-reference-icon brand-icon brand-whatsapp" aria-hidden="true"></span><h4>WhatsApp</h4><p>+212 611346544</p><a href="https://wa.me/212611346544" target="_blank" rel="noopener noreferrer">Write me <span>→</span></a></article>
-        <article class="contact-reference-card reveal"><span class="contact-reference-icon linkedin-mark" aria-hidden="true">in</span><h4>LinkedIn</h4><p>Cherkani Yahya</p><a href="https://www.linkedin.com/in/yahyacherkani/" target="_blank" rel="noopener noreferrer">Write me <span>→</span></a></article>
-      </div>
-    </div></section>
-  </main>
-
-  <footer class="footer"><div class="container footer-main"><div><a href="#accueil" class="logo"><span>[</span> CY <span>]</span></a><p>Des idées claires.<br>Des expériences fortes.</p></div><div><h3>Navigation</h3><a href="#apropos">À propos</a><a href="#projets">Projets</a><a href="#services">Services</a></div><div><h3>Me suivre</h3><a href="https://github.com/">GitHub</a><a href="https://www.linkedin.com/in/yahyacherkani/">LinkedIn</a><a href="https://instagram.com/">Instagram</a></div><div class="footer-cta"><p>Prêt à démarrer ?</p><a href="#contact">Écrivez-moi ↗</a></div></div><div class="container footer-bottom"><p>© <span id="year"></span> Cherkani Yahya. Tous droits réservés.</p><p>Conçu avec soin à Casablanca.</p></div></footer>
-  <button class="back-to-top" type="button" aria-label="Revenir en haut">↑</button>
-</body>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="Revenir en haut">
+      ↑
+    </button>
+  </body>
 </html>
